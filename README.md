@@ -55,9 +55,9 @@ brew install ffmpeg
 1. Place `.wav`files in same folder as the script.
 2. Update the `files` dictionary with your filenames.
 3. Define segments/regions to splice up using either of the two options:
-    - Bar ranges: (start_bar, end_bar)
-    - Milliseconds: (start_ms, end_ms)
-    - Set USE_BARS to True/False respectively.
+    - Bar ranges: (`start_bar`, `end_bar`)
+    - Milliseconds: (`start_ms`, `end_ms`)
+    - Set `USE_BARS` to True/False respectively.
 4. Run script 
 ```bash 
 python AudioSampler.py
