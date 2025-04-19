@@ -39,7 +39,7 @@ segments = {
 
 for name, path in files.items():
     audio = AudioSegment.from_wav(path)
-    for segment, (start, end) in segments.items():
+    for segment_name, (start, end) in segments.items():
         if USE_BARS:
             start_ms = int(start * BAR_LENGTH_MS) + SHIFT_MS
             end_ms = int(end * BAR_LENGTH_MS) + SHIFT_MS
@@ -49,8 +49,8 @@ for name, path in files.items():
         
         segment = audio[start_ms:end_ms]
         if NAMING_SEGMENTS_FIRST:
-            segment.export(f"{segment}_{name}.wav", format="wav")
+            segment.export(f"{segment_name}_{name}.wav", format="wav")
         else:
-            segment.export(f"{name}_{segment}.wav", format="wav")
+            segment.export(f"{name}_{segment_name}.wav", format="wav")
 
 print("Audio Segments exported successfully! :)")
