@@ -6,7 +6,7 @@ A simple Multi-Track Audio Sampler to splice up bars consistently across synchro
 
 It takes up multiple synchronised `.wav` stem tracks (bass, drums, vocals, etc.) and slices them based on your selected musical segments (bars / milliseconds).
 
-Exports the resulting samples into new files.
+Exports the resulting samples into new files in the same directory.
 
 ## REQUIREMENTS
 
