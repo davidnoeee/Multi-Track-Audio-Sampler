@@ -1,4 +1,4 @@
-![Preview](mtas-icon.png)
+![Preview](mtas-icon2.png)
 
 # Multi-Track Audio Sampler
 
