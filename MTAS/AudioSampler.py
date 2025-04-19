@@ -35,7 +35,7 @@ segments = {
     "outro": (56, 64)
 }
 
-# PROCRESSING
+# PROCESSING
 
 for name, path in files.items():
     audio = AudioSegment.from_wav(path)
