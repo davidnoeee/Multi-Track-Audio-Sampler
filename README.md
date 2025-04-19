@@ -67,3 +67,4 @@ python AudioSampler.py
 
 - You can adjust `SHIFT_MS` - Optional manual offset (in milliseconds) to compensate for silence or pre-roll at the start of the audio file.
 - If you re-run script with changes made, originally generated files get **overwritten** (fix by changing filenames!)
+- I recommend using [Demucs](https://github.com/facebookresearch/demucs) if you have your audiofile but the different stem tracks are not split up yet!
