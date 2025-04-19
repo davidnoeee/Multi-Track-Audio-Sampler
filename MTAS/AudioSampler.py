@@ -5,9 +5,9 @@ from pydub import AudioSegment
 USE_BARS = True
 BPM = 120
 BAR_LENGTH_MS = 60000 / BPM * 4 # 4 beats per bar
-NAMING_SEGMENTS_FIRST = True # If True, the filename of exported files starts with the segment, if fals, the original filename is preserved as prefix.
+NAMING_SEGMENTS_FIRST = True # If True, exported filenames start with the region name (e.g. chorus_bass.wav). If False, the original filename is used as the prefix (e.g. bass_chorus.wav).
 
-SHIFT_MS = 0 # Manual song shift in milliseconds if the audiofile has a bit of silence at the start
+SHIFT_MS = 0 # Optional manual offset (in milliseconds) to compensate for silence or pre-roll at the start of the audio file.
 
 # AUDIO FILES
 # Upload your files to the SAME folder as this script
