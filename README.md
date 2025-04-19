@@ -32,11 +32,10 @@ cd multitrack-audio-slicer
 brew install python@3.11
 ```
 
-run
+if encountering filepath issues, run, otherwise ignore
 ```bash
 brew link python@3.11 --force --overwrite
 ```
-if encountering filepath issues
 
 ### 3. Create and activate a virtual environment
 ```bash
